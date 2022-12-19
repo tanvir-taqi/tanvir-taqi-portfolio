@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rubik+Vinyl&display=swap');
+
+
+
+
+
+.welcome-msg-box{
+    display: flex;
+    justify-content: end;
+    border: 2px solid rgba(61, 61, 61, 0.315);
+    width: 80%;
+    transition: all 3s ease-in;
+    animation: welcome 3s ease-in 1s ;
+    font-family: 'Rubik Vinyl', cursive;
+    font-size: 24px;
+    
+}
+
+.welcome-msg{
+    border: 2px solid rgba(61, 61, 61, 0.315);
+    background: rgba(61, 61, 61, 0.115);
+    width: 300px;
+    font-weight: 900;
+  
+}
+
+@keyframes welcome {
+    0%{
+        left: -1000px;
+    }
+    100%{
+        left: 0;
+    }
+    
+}
+
+.banner-box{
+    box-shadow: inset 10px 10px 20px 10px rgb(134, 132, 132);
+    
+}
