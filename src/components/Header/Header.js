@@ -28,6 +28,7 @@ const Header = () => {
                     <div onClick={() => setDisplay(false)} className="nav-menu-link  flex flex-col md:items-center items-start md:flex-row py-12 md:py-1 ">
                         <NavLink className={({ isActive }) => (isActive ? 'mr-4 text-lg font-semibold   my-2 text-gray-600 ' : 'mr-4 text-lg font-semibold   my-2')} to='/'>Home</NavLink>
                         <NavLink className={({ isActive }) => (isActive ? 'mr-4 text-lg font-semibold   my-2 text-gray-600 ' : 'mr-4 text-lg font-semibold   my-2')} to='/projects'>Projects</NavLink>
+                        <NavLink className={({ isActive }) => (isActive ? 'mr-4 text-lg font-semibold   my-2 text-gray-600 ' : 'mr-4 text-lg font-semibold   my-2')} to='/skills'>Skills</NavLink>
                         <NavLink className={({ isActive }) => (isActive ? 'mr-4 text-lg font-semibold   my-2 text-gray-600 ' : 'mr-4 text-lg font-semibold   my-2')} to='/about'>About Me</NavLink>
                         <NavLink className={({ isActive }) => (isActive ? 'mr-4 text-lg font-semibold   my-2 text-gray-600 ' : 'mr-4 text-lg font-semibold   my-2')} to='/contact'>Contact Me</NavLink>
 

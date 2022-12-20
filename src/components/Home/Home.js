@@ -8,14 +8,14 @@ const Home = () => {
         window.open(url, '_blank', 'noopener,noreferrer');
       };
     return (
-        <div >
+        <div className='my-16'>
             <div className='flex welcome-msg-box relative'>
                 <div className='welcome-msg'>
                     <h1 className=''>Welcome To My </h1>
                     <h1>Portfolio</h1>
                 </div>
             </div>
-            <div className='banner-box border md:p-20 p-6 md:m-16 flex items-center justify-center'>
+            <div className='banner-box border md:p-16 p-6 md:mx-16 mt-2 flex items-center justify-center'>
                 <div>
                     <h1 className='text-4xl text-gray-900'>I am MD. Tanvir Akbar Taqi</h1>
                     <h1 className='text-lg text-black font-bold'><Typewriter

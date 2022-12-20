@@ -4,7 +4,7 @@ import './SingleProject.css'
 const SingleProject = ({ project ,openInProject}) => {
     const { name, picture, technology, type, link } = project
     return (
-        <div  onClick={()=>openInProject(link)} className='border border-gray-500'>
+        <div  onClick={()=>openInProject(link)} className='border border-gray-500 px-2'>
             <div className='relative p-4 md:p-1  overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl'>
                 <img
                     className='my-10  h-56 md:h-64 xl:h-80 project-img'

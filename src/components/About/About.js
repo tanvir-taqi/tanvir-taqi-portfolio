@@ -17,10 +17,10 @@ const About = () => {
                         words={[about]}
                         loop={1}
                         cursor
-                        cursorStyle='_'
-                        typeSpeed={1}
+                        cursorStyle=''
+                        typeSpeed={0.8}
                         deleteSpeed={50}
-                        delaySpeed={800}
+                        delaySpeed={1000}
                     ></Typewriter>
             
             </p>

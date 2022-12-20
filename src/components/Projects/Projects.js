@@ -1,12 +1,18 @@
 import React, { useEffect, useState } from 'react';
+import Loader from '../Loader/Loader';
 import SingleProject from './SingleProject';
 
 const Projects = () => {
     const [projects, setProjects] = useState([])
+    const [ loading ,  setLoading] = useState(true)
     useEffect(()=>{
+        setLoading(true)
         fetch('https://tanvir-taqi-server.vercel.app/projects')
         .then(res => res.json())
-        .then(data => setProjects(data))
+        .then(data => {
+            setProjects(data)
+            setLoading(false)
+        })
     },[])
 
     const openInProject = url => {
@@ -14,6 +20,9 @@ const Projects = () => {
         window.open(url, '_blank', 'noopener,noreferrer');
       };
 
+      if(loading){
+        return <Loader></Loader>
+      }
 
     return (
         <div className='flex justify-center flex-col md:mx-16'>
