@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import './Header.css'
 
 const Header = () => {
     const [display, setDisplay] = useState(false)
@@ -18,10 +19,10 @@ const Header = () => {
                     {/* header logo and name  */}
 
                     <Link to='/' className={`font-bold flex  text-lg md:text-3xl`}>
-                        <h1 className='text-black title-navbar'>T</h1>
+                        <h1 className=' title-navbar font-extrabold text-5xl'>Tanvir</h1>
                     </Link>
 
-                    <button className='block md:hidden text-black from-neutral-900 text-xs font-extrabold border border-black rounded-full shadow-black  shadow-inner py-1 px-2 ' onClick={() => setDisplay(!display)}>T</button>
+                    <button className='block md:hidden text-black from-neutral-900 text-xs font-extrabold border border-black rounded-full shadow-black  shadow-inner py-2 px-3 text-center ' onClick={() => setDisplay(!display)}>T</button>
                 </div>
                 {/* header links  */}
                 <div className={`nav-menu flex  md:items-center flex-col md:flex-row   ${display ? 'flex' : 'hidden md:flex'}`} >

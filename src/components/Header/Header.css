@@ -1,0 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rubik+Vinyl&display=swap');
+
+.title-navbar{
+    
+    color: rgb(53, 52, 52);
+    text-shadow: 2px 2px 3px 1px rgb(0, 0, 0);  
+    font-family: 'Rubik Vinyl', cursive;
+}
