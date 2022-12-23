@@ -4,11 +4,40 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
-
+*{
+  
+  margin: 0;
+  padding: 0;
+}
 body {
   min-height: 100vh;
- background: rgb(226, 225, 225);
+ background: #1e1e1e;
+ color: #f7f7f7;
+ letter-spacing: 1px;
  font-family: 'Unbounded', cursive;
+ 
 
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: #f7f7f7;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1e1e1e;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ee0a0a; 
 }
 

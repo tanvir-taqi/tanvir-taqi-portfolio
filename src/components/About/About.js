@@ -1,5 +1,7 @@
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
+import ArrowNav from '../ArrowNav/ArrowNav';
+import { motion } from "framer-motion"
 
 const About = () => {
     const about = `I am MD. Tanvir Akbar Taqi. I am a web developer. I use MongoDB, Express JS, React.JS, and Node.JS for creating dynamic web applications. I am also familiar with Next.JS, Redux, Typescript, MaterialUI.
@@ -10,9 +12,17 @@ const About = () => {
     
     In next five years I see myself working for a tech giant company and in next ten years, I see myself as a CEO of my own company like modern tech giants.`
     return (
-        <div>
-            <h1 className='text-3xl text-gray-900 font-extrabold text-center'>About Me</h1>
-            <p className='banner-box border md:p-20 p-6 md:m-16 flex text-lg text-black tracking-wider items-center justify-center'>
+      <motion.div initial={{ opacity: 0, scaleX: 0.5 }}
+        animate={{ opacity: 1, scaleX: 1 }}
+        transition={{ duration: 1 }}>
+      <div className='py-10'>
+          <ArrowNav
+            leftLink='/skills'
+            rightLink='/contact'
+            ></ArrowNav>
+          <div>
+            <h1 className='text-5xl font-bold text-center text-stone-900 my-10'>About Me</h1>
+            <p className='banner-box border md:p-20 p-6 md:m-16 flex text-base text-black tracking-wider items-center justify-center'>
             <Typewriter
                         words={[about]}
                         loop={1}
@@ -25,6 +35,9 @@ const About = () => {
             
             </p>
         </div>
+      </div>
+      </motion.div>
+
     );
 };
 

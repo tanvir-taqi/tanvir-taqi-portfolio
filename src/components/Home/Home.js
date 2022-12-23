@@ -1,6 +1,9 @@
+import { MotionConfig } from 'framer-motion';
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
+import ArrowNav from '../ArrowNav/ArrowNav';
 import './Home.css'
+import { motion } from "framer-motion"
 
 const Home = () => {
     const openInNewTab = url => {
@@ -8,7 +11,14 @@ const Home = () => {
         window.open(url, '_blank', 'noopener,noreferrer');
       };
     return (
-        <div className='my-16'>
+        <motion.div initial={{ opacity: 0, scaleX: 0.5 }}
+        animate={{ opacity: 1, scaleX: 1 }}
+        transition={{ duration: 1 }}>
+        <div className='my-16 '>
+            <ArrowNav
+            leftLink='/contact'
+            rightLink='/projects'
+            ></ArrowNav>
             <div className='flex welcome-msg-box relative'>
                 <div className='welcome-msg'>
                     <h1 className=''>Welcome To My </h1>
@@ -32,6 +42,7 @@ const Home = () => {
                 </div>
             </div>
         </div>
+        </motion.div>
     );
 };
 

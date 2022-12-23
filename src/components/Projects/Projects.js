@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import ArrowNav from '../ArrowNav/ArrowNav';
 import Loader from '../Loader/Loader';
 import SingleProject from './SingleProject';
+import { motion } from "framer-motion"
 
 const Projects = () => {
     const [projects, setProjects] = useState([])
@@ -25,6 +27,15 @@ const Projects = () => {
       }
 
     return (
+        <motion.div initial={{ opacity: 0, scaleX: 0.5 }}
+        animate={{ opacity: 1, scaleX: 1 }}
+        transition={{ duration: 1 }}>
+        <div>
+            <ArrowNav
+            leftLink='/'
+            rightLink='/skills'
+            ></ArrowNav>
+        
         <div className='flex justify-center flex-col md:mx-16 my-12'>
                 <h1 className='text-5xl font-bold text-center text-stone-900 my-10'>Projects</h1>
             <div className='grid grid-cols-1 md:grid-cols-3 m-auto  md:gap-20 '>
@@ -37,6 +48,8 @@ const Projects = () => {
             }
         </div>
         </div>
+        </div>
+        </motion.div>
     );
 };
 

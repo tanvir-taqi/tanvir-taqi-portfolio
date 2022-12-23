@@ -1,13 +1,26 @@
-import { RouterProvider } from 'react-router-dom';
+import {BrowserRouter as Router} from 'react-router-dom';
 import './App.css';
-import { router } from './routers/router';
+
+import Header from './components/Header/Header';
+
+import Social from './components/Social/Social';
+import AnimatedRoute from './routers/AnimatedRoute';
+
 
 function App() {
   return (
     <div className=''>
-      <RouterProvider router={router}>
+      
+      <Router>
+        <Header></Header>
+        <Social></Social>
+      <AnimatedRoute></AnimatedRoute>
+      </Router>
         
-      </RouterProvider>
+      {/* <RouterProvider router={router}>
+        
+      </RouterProvider> */}
+
     </div>
  );
 }
