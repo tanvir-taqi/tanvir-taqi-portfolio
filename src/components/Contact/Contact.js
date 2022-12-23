@@ -42,25 +42,25 @@ const Contact = () => {
                                 <label className="label">
                                     Name: 
                                 </label>
-                                <input required type="text" name='user_name' placeholder="email" className="input input-bordered bg-gray-300 border border-gray-500 p-1" />
+                                <input required type="text" name='user_name' placeholder="email" className="input input-bordered bg-[#f7f7f7d0] border border-[#f7f7f7] text-[#1e1e1e] tracking-wider text-semibold p-1" />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     Email: 
                                 </label>
-                                <input required type="email" name='user_email' placeholder="Name" className="input input-bordered bg-gray-300 border border-gray-500 p-1" />
+                                <input required type="email" name='user_email' placeholder="Name" className="input input-bordered bg-[#f7f7f7d0] border border-[#f7f7f7] text-[#1e1e1e] tracking-wider text-semibold p-1" />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                    Subject: 
                                 </label>
-                                <input required type="text" name='subject' placeholder="Subject" className="input input-bordered bg-gray-300 border border-gray-500 p-1" />
+                                <input required type="text" name='subject' placeholder="Subject" className="input input-bordered bg-[#f7f7f7d0] border border-[#f7f7f7] text-[#1e1e1e] tracking-wider text-semibold p-1" />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     Your message
                                 </label>
-                                <textarea name="message" className="textarea textarea-bordered h-24 w-full my-3 bg-gray-300 border border-gray-500 p-1" placeholder="Your Message" required></textarea>
+                                <textarea name="message" className="textarea textarea-bordered h-24 w-full my-3 text-base  bg-[#f7f7f7d0] border border-[#f7f7f7] text-[#1e1e1e] tracking-wider text-semibold p-1" placeholder="Your Message" required></textarea>
                             </div>
 
 
