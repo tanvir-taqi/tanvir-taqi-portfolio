@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import ArrowNav from '../ArrowNav/ArrowNav';
 import { motion } from "framer-motion"
@@ -11,6 +11,11 @@ const About = () => {
     I would prefer to describe myself as a quick learner.I am very passionate with programming and I believe that I can build my career in web development. I like creative jobs and I found my interest in web developing.
     
     In next five years I see myself working for a tech giant company and in next ten years, I see myself as a CEO of my own company like modern tech giants.`
+
+    useEffect(()=>{
+      window.scrollTo(0,0)
+  },[])
+
     return (
       <motion.div initial={{ opacity: 0, scaleX: 0.5 }}
         animate={{ opacity: 1, scaleX: 1 }}
@@ -21,14 +26,14 @@ const About = () => {
             rightLink='/contact'
             ></ArrowNav>
           <div>
-            <h1 className='text-5xl font-bold text-center text-stone-900 my-10'>About Me</h1>
-            <p className='banner-box border md:p-20 p-6 md:m-16 flex text-base text-black tracking-wider items-center justify-center'>
+            <h1 className='text-5xl font-bold text-center  my-10'>About Me</h1>
+            <p className='banner-box border md:p-20 p-6 md:m-16 flex text-base tracking-wider items-center justify-center'>
             <Typewriter
                         words={[about]}
                         loop={1}
                         cursor
                         cursorStyle=''
-                        typeSpeed={0.8}
+                        typeSpeed={1}
                         deleteSpeed={50}
                         delaySpeed={1000}
                     ></Typewriter>

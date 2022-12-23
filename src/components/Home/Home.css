@@ -7,21 +7,26 @@
 .welcome-msg-box{
     display: flex;
     justify-content: end;
-    border: 2px solid rgba(61, 61, 61, 0.315);
+    align-items: center;
+    border: 2px solid #f7f7f71c;
     width: 80%;
     transition: all 3s ease-in;
     animation: welcome 3s ease-in 1s ;
     font-family: 'Rubik Vinyl', cursive;
     font-size: 24px;
+    height: fit-content;
     
 }
 
 .welcome-msg{
-    border: 2px solid rgba(61, 61, 61, 0.315);
-    background: rgba(61, 61, 61, 0.115);
+    border: none;
+    background: transparent;
     width: 300px;
     font-weight: 900;
-  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 @keyframes welcome {
@@ -35,6 +40,6 @@
 }
 
 .banner-box{
-    box-shadow: inset 10px 10px 20px 10px rgb(134, 132, 132);
+    box-shadow: inset 10px 10px 20px 10px #f7f7f754;
     
 }

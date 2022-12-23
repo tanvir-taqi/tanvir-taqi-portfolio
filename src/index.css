@@ -5,13 +5,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
 *{
-  
+ 
   margin: 0;
   padding: 0;
 }
 body {
   min-height: 100vh;
- background: #1e1e1e;
+  background-image:  radial-gradient(circle,#1e1e1e, #1e1e1ed2);
  color: #f7f7f7;
  letter-spacing: 1px;
  font-family: 'Unbounded', cursive;
