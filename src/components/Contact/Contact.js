@@ -1,21 +1,28 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import ArrowNav from '../ArrowNav/ArrowNav';
 import { motion } from "framer-motion"
 
 
 const Contact = () => {
+    const [emailMsg, setEmailMsg] = useState('')
+    const [errorMsg, setErrorMsg] = useState('')
 
     const form = useRef();
 
     const sendEmail = (e) => {
+
         e.preventDefault();
 
         emailjs.sendForm('service_52mxtwo', 'template_fl837d9', form.current, 'RaCrOoOxgfuP7W8Cq')
             .then((result) => {
-                console.log(result.text);
+                if(result.text ==='OK'){
+                    setEmailMsg("Thanks for response. Your email is sent succesfully")
+                }
             }, (error) => {
-                console.log(error.text);
+                if(error){
+                    setErrorMsg("Something went wrong!! Can you please try again!!")
+                }
             });
         e.target.reset()
     };
@@ -37,6 +44,8 @@ const Contact = () => {
                 <div className='relative flex justify-center md:mx-16 '>
                     <div className='md:w-3/4 w-full pb-12'>
                         <h1 className='text-5xl font-bold text-center  my-10'>Contact Me</h1>
+                        <p className='text-lg'>{emailMsg}</p>
+                        <p className='text-lg'>{errorMsg}</p>
                         <form className=" my-10 p-10 border border-[#f7f7f71c]" ref={form} onSubmit={sendEmail}>
                             <div className="form-control">
                                 <label className="label">
@@ -65,7 +74,7 @@ const Contact = () => {
 
 
                             <div className="form-control mt-6">
-                                <input className="btn " type="submit" value="Send Message" />
+                                <input className="btn bg-[#f7f7f7] text-[#1e1e1e] hover:text-black  hover:bg-[#f7f7f762] font-bold my-2 rounded-lg p-2" type="submit" value="Send Message" />
                             </div>
                         </form>
                     </div>

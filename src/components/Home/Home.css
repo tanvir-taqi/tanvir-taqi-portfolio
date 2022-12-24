@@ -15,6 +15,7 @@
     font-family: 'Rubik Vinyl', cursive;
     font-size: 24px;
     height: fit-content;
+    z-index: -999;
     
 }
 

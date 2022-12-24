@@ -39,7 +39,8 @@ function App() {
 
   return (
     <div className=''>
-     
+     <div className="lightLine"></div>
+     <div className="lightLine2"></div>
 
       <Router>
       <motion.div 

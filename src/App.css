@@ -10,3 +10,50 @@
   z-index: 999;
 }
 
+
+.lightLine{
+  height: 0.001px;
+  min-width: 100%;
+  /* transform: rotate(100deg); */
+  box-shadow: 1200px 800px 600px 200px #f7f7f710;
+  animation: bgLight;
+  animation-duration: 20s;
+  z-index: -999;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bgLight {
+  0%{
+    transform: rotate(-40deg);
+  }
+ 50%{
+  transform: rotate(360deg);
+ }
+  100%{
+    transform: rotate(-40deg);
+  }
+}
+.lightLine2{
+  height: 0.001px;
+  min-width: 100%;
+  /* transform: rotate(100deg); */
+  box-shadow: 1200px 800px 600px 200px #f7f7f710;
+  animation: bgLight2;
+  animation-duration: 20s;
+  z-index: -999;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bgLight2 {
+  0%{
+    transform: rotate(360deg);
+  }
+ 50%{
+  transform: rotate(-40deg);
+ }
+  100%{
+    transform: rotate(360deg);
+  }
+}
