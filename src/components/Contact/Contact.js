@@ -11,7 +11,7 @@ const Contact = () => {
     const form = useRef();
 
     const sendEmail = (e) => {
-
+        setEmailMsg('')
         e.preventDefault();
 
         emailjs.sendForm('service_52mxtwo', 'template_fl837d9', form.current, 'RaCrOoOxgfuP7W8Cq')
