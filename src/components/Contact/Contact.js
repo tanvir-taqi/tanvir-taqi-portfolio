@@ -16,11 +16,11 @@ const Contact = () => {
 
         emailjs.sendForm('service_52mxtwo', 'template_fl837d9', form.current, 'RaCrOoOxgfuP7W8Cq')
             .then((result) => {
-                if(result.text ==='OK'){
+                if (result.text === 'OK') {
                     setEmailMsg("Thanks for response. Your email is sent succesfully")
                 }
             }, (error) => {
-                if(error){
+                if (error) {
                     setErrorMsg("Something went wrong!! Can you please try again!!")
                 }
             });
@@ -49,19 +49,19 @@ const Contact = () => {
                         <form className=" my-10 p-10 border border-[#f7f7f71c]" ref={form} onSubmit={sendEmail}>
                             <div className="form-control">
                                 <label className="label">
-                                    Name: 
+                                    Name:
                                 </label>
                                 <input required type="text" name='user_name' placeholder="email" className="input input-bordered bg-[#f7f7f7d0] border border-[#f7f7f7] text-[#1e1e1e] tracking-wider text-semibold p-1" />
                             </div>
                             <div className="form-control">
                                 <label className="label">
-                                    Email: 
+                                    Email:
                                 </label>
                                 <input required type="email" name='user_email' placeholder="Name" className="input input-bordered bg-[#f7f7f7d0] border border-[#f7f7f7] text-[#1e1e1e] tracking-wider text-semibold p-1" />
                             </div>
                             <div className="form-control">
                                 <label className="label">
-                                   Subject: 
+                                    Subject:
                                 </label>
                                 <input required type="text" name='subject' placeholder="Subject" className="input input-bordered bg-[#f7f7f7d0] border border-[#f7f7f7] text-[#1e1e1e] tracking-wider text-semibold p-1" />
                             </div>
@@ -72,7 +72,8 @@ const Contact = () => {
                                 <textarea name="message" className="textarea textarea-bordered h-24 w-full my-3 text-base  bg-[#f7f7f7d0] border border-[#f7f7f7] text-[#1e1e1e] tracking-wider text-semibold p-1" placeholder="Your Message" required></textarea>
                             </div>
 
-
+                            <p className='text-lg'>{emailMsg}</p>
+                            <p className='text-lg'>{errorMsg}</p>
                             <div className="form-control mt-6">
                                 <input className="btn bg-[#f7f7f7] text-[#1e1e1e] hover:text-black  hover:bg-[#f7f7f762] font-bold my-2 rounded-lg p-2" type="submit" value="Send Message" />
                             </div>
