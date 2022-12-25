@@ -10,8 +10,8 @@ import AnimatedRoute from './routers/AnimatedRoute';
 
 function App() {
   const [mousePosition, setMousePosition] =useState({
-    x:0,
-    y:0
+    x:-50,
+    y:-50
   })
 
   const variants = {

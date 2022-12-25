@@ -14,12 +14,12 @@ const Skill = () => {
         <motion.div initial={{ opacity: 0, scaleX: 0.5 }}
         animate={{ opacity: 1, scaleX: 1 }}
         transition={{ duration: 1 }}>
-        <div className='pb-12'>
+        <div className=''>
             <ArrowNav
             leftLink='/projects'
             rightLink='/about'
             ></ArrowNav>
-            <div>
+            <div className='mx-16 pb-12'>
            <h1 className='text-5xl font-bold text-center  my-10'>Skills</h1>
            <div className='flex justify-around items-center w-full'>
 
