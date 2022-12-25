@@ -29,7 +29,7 @@ const Contact = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0)
-    }, [])
+    },[])
 
     return (
         <motion.div initial={{ opacity: 0, scaleX: 0.5 }}
@@ -41,7 +41,7 @@ const Contact = () => {
                     rightLink='/'
                 ></ArrowNav>
 
-                <div className='relative flex justify-center md:mx-16 '>
+                <div className='relative flex justify-center md:mx-16 pt-16'>
                     <div className='md:w-3/4 w-full pb-12'>
                         <h1 className='text-5xl font-bold text-center  my-10'>Contact Me</h1>
                         <p className='text-lg'>{emailMsg}</p>

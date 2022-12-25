@@ -12,6 +12,8 @@ const SingleProject = ({ project ,openInProject}) => {
                     alt=''
                 />
                 <div className='project-details absolute inset-0 px-6 py-4 transition-opacity duration-200 bg-opacity-90 opacity-0 hover:opacity-100'>
+                    
+                    <div className='project-details-content'>
                     <p className='mb-4 text-lg font-bold '>{name}</p>
                     <br />
                     <p className='text-base font-semibold tracking-wide '>{subtype}</p>
@@ -21,6 +23,8 @@ const SingleProject = ({ project ,openInProject}) => {
                     <p className='text-sm tracking-wide '>Technologies : {
                         technology.map((tech, index) => <li key={index} > {tech}</li>)
                     }</p>
+                    </div>
+                    <div className="scanner"></div>
                 </div>
             </div>
         </div>

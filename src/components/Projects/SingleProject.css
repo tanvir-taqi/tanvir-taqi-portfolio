@@ -10,3 +10,42 @@
     color: #f7f7f7;
     
 }
+
+.scanner{
+    height: 1px;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    left: 0;
+    z-index: 999;
+    background: rgb(255, 255, 255);
+    
+    display: none;
+}
+
+
+.project-card:hover .scanner {
+    display: block;
+    animation: scanDetails;
+    animation-duration: 3s;
+   animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes scanDetails {
+    0%{
+        top: 0;
+        opacity: 1;
+    }
+  
+    50%{
+        top: 100%;
+        opacity: 0.5;
+    }
+    100%{
+        top: 0%;
+        opacity: 0;
+    }
+}

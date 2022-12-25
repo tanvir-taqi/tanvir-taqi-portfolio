@@ -40,7 +40,7 @@ const Projects = () => {
             rightLink='/skills'
             ></ArrowNav>
         
-        <div className='flex justify-center flex-col md:mx-16  pb-12'>
+        <div className='flex justify-center flex-col md:mx-16  pb-12 pt-16'>
                 <h1 className='text-5xl font-bold text-center  my-10'>Projects</h1>
             <div className='grid grid-cols-1 md:grid-cols-3 m-auto  md:gap-20 '>
             {
@@ -51,6 +51,7 @@ const Projects = () => {
                 ></SingleProject>)
             }
         </div>
+            
         </div>
         </div>
         </motion.div>

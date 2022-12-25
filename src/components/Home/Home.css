@@ -8,10 +8,10 @@
     display: flex;
     justify-content: end;
     align-items: center;
-    border: 2px solid #f7f7f71c;
+    /* border: 2px solid #f7f7f71c; */
     width: 80%;
     transition: all 3s ease-in;
-    animation: welcome 3s ease-in 1s ;
+    animation: welcome 2s ease-in 1s ;
     font-family: 'Rubik Vinyl', cursive;
     font-size: 24px;
     height: fit-content;
@@ -41,6 +41,6 @@
 }
 
 .banner-box{
-    box-shadow: inset 10px 10px 20px 10px #f7f7f754;
+    /* box-shadow: inset 10px 10px 20px 10px #f7f7f754; */
     
 }

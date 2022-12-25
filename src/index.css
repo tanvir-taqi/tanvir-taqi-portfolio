@@ -8,6 +8,7 @@
  
   margin: 0;
   padding: 0;
+  mix-blend-mode: luminosity;
 }
 body {
   min-height: 100vh;

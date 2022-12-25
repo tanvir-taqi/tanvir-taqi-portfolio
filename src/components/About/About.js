@@ -25,9 +25,9 @@ const About = () => {
             leftLink='/skills'
             rightLink='/contact'
             ></ArrowNav>
-          <div>
+          <div className='pt-16'>
             <h1 className='text-5xl font-bold text-center  my-10'>About Me</h1>
-            <p className='banner-box border md:p-20 p-6 md:m-16 flex text-base tracking-wider items-center justify-center'>
+            <p className=' md:p-20 p-6 md:m-16 flex text-base tracking-wider items-center justify-center'>
             <Typewriter
                         words={[about]}
                         loop={1}

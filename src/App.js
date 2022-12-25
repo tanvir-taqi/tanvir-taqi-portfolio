@@ -44,7 +44,7 @@ function App() {
 
       <Router>
       <motion.div 
-      className='cursor hidden md:block'
+      className={`cursor hidden md:block `}
       variants={variants}
       animate="default"
       ></motion.div>

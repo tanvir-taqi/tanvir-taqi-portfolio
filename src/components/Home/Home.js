@@ -26,7 +26,7 @@ const Home = () => {
             leftLink='/contact'
             rightLink='/projects'
             ></ArrowNav>
-            <div className='flex welcome-msg-box relative '>
+            <div className='flex welcome-msg-box relative mt-16  '>
                 <div className='welcome-msg'>
                     <h1 className=''>Welcome To My </h1>
                     <h1>Portfolio</h1>
@@ -35,7 +35,7 @@ const Home = () => {
             <div className='banner-box border-[#f7f7f7d5] md:p-16 p-6 md:mx-16 mt-2 flex items-center justify-center'>
                 <div>
                     <h1 className='text-4xl text-[#f7f7f7'>I am MD. Tanvir Akbar Taqi</h1>
-                    <h1 className='text-lg text-black font-bold'><Typewriter
+                    <h1 className='text-lg text-[#c5c5c5] font-bold'><Typewriter
                         words={['Web Developer', "Front End Developer", "MERN Stack Developer", "React.JS Developer"]}
                         loop={false}
                         cursor
@@ -44,7 +44,7 @@ const Home = () => {
                         deleteSpeed={50}
                         delaySpeed={800}
                     ></Typewriter></h1>
-                    <button className='bg-[#f7f7f7] text-[#1e1e1e] hover:text-black hover:bg-[#f7f7f762] font-bold my-2 rounded-lg p-2' onClick={()=>openInNewTab("https://drive.google.com/file/d/1PtJ6KrvqK9xbBWcq8H9yMiMNt_zBOW3S/view?usp=sharing") }>Resume</button>
+                    <button className='bg-[#f7f7f7] text-[#1e1e1e]  hover:text-black hover:bg-[#f7f7f762] font-bold my-2 rounded-lg p-2' onClick={()=>openInNewTab("https://drive.google.com/file/d/1PtJ6KrvqK9xbBWcq8H9yMiMNt_zBOW3S/view?usp=sharing") }>Resume</button>
                     
                 </div>
             </div>

@@ -4,7 +4,7 @@
   width:28px;
   height: 28px;
   background: rgba(0, 0, 0, 0.596);
-  border: 4px solid rgba(255, 255, 255, 0.514);
+  border: 4px solid rgb(255, 255, 255);
   position: fixed;
   border-radius: 50%;
   z-index: 999;
@@ -15,7 +15,7 @@
   height: 0.001px;
   min-width: 100%;
   /* transform: rotate(100deg); */
-  box-shadow: 1200px 800px 600px 200px #f7f7f710;
+  box-shadow: 1200px 800px 600px 200px #f7f7f73f;
   animation: bgLight;
   animation-duration: 20s;
   z-index: -999;
@@ -35,10 +35,11 @@
   }
 }
 .lightLine2{
+ 
   height: 0.001px;
   min-width: 100%;
   /* transform: rotate(100deg); */
-  box-shadow: 1200px 800px 600px 200px #f7f7f710;
+  box-shadow: 1200px 800px 600px 200px #f7f7f73f;
   animation: bgLight2;
   animation-duration: 20s;
   z-index: -999;
