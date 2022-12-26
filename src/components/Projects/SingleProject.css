@@ -12,7 +12,7 @@
 }
 
 .scanner{
-    height: 1px;
+    height: 3px;
     min-width: 100%;
     position: absolute;
     top: 0;
@@ -28,7 +28,7 @@
 .project-card:hover .scanner {
     display: block;
     animation: scanDetails;
-    animation-duration: 3s;
+    animation-duration: 2.3s;
     animation-delay: 0s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: 1;

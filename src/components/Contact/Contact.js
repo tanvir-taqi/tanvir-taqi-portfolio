@@ -2,15 +2,17 @@ import React, { useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import ArrowNav from '../ArrowNav/ArrowNav';
 import { motion } from "framer-motion"
+import Loader from '../Loader/Loader';
 
 
 const Contact = () => {
     const [emailMsg, setEmailMsg] = useState('')
     const [errorMsg, setErrorMsg] = useState('')
-
+    const  [loadContact, setLoadContact ] = useState(false)
     const form = useRef();
 
     const sendEmail = (e) => {
+        setLoadContact(true)
         setEmailMsg('')
         e.preventDefault();
 
@@ -18,18 +20,25 @@ const Contact = () => {
             .then((result) => {
                 if (result.text === 'OK') {
                     setEmailMsg("Thanks for response. Your email is sent succesfully")
+                    setLoadContact(false)
                 }
             }, (error) => {
                 if (error) {
                     setErrorMsg("Something went wrong!! Can you please try again!!")
+                    setLoadContact(false)
                 }
             });
         e.target.reset()
+        
     };
 
     useEffect(() => {
         window.scrollTo(0, 0)
     },[])
+
+    if(loadContact){
+        return <Loader></Loader>
+    }
 
     return (
         <motion.div initial={{ opacity: 0, scaleX: 0.5 }}
@@ -72,8 +81,8 @@ const Contact = () => {
                                 <textarea name="message" className="textarea textarea-bordered h-24 w-full my-3 text-base  bg-[#f7f7f7d0] border border-[#f7f7f7] text-[#1e1e1e] tracking-wider text-semibold p-1" placeholder="Your Message" required></textarea>
                             </div>
 
-                            <p className='text-lg'>{emailMsg}</p>
-                            <p className='text-lg'>{errorMsg}</p>
+                            {/* <p className='text-lg'>{emailMsg}</p>
+                            <p className='text-lg'>{errorMsg}</p> */}
                             <div className="form-control mt-6">
                                 <input className="btn bg-[#f7f7f7] text-[#1e1e1e] hover:text-black  hover:bg-[#f7f7f762] font-bold my-2 rounded-lg p-2" type="submit" value="Send Message" />
                             </div>

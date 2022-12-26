@@ -27,11 +27,11 @@ const Header = () => {
                 {/* header links  */}
                 <div className={`nav-menu flex  md:items-center flex-col md:flex-row   ${display ? 'flex' : 'hidden md:flex'}`} >
                     <div onClick={() => setDisplay(false)} className="nav-menu-link  flex flex-col md:items-center items-start md:flex-row py-12 md:py-1 ">
-                        <NavLink className={({ isActive }) => (isActive ? 'mr-2 text-base font-semibold   my-2 text-[#f7f7f793] underline ' : 'mr-2 text-base font-semibold   my-2')} to='/'>Home</NavLink>
-                        <NavLink className={({ isActive }) => (isActive ? 'mr-2 text-base font-semibold   my-2 text-[#f7f7f793] underline ' : 'mr-2 text-base font-semibold   my-2')} to='/projects'>Projects</NavLink>
-                        <NavLink className={({ isActive }) => (isActive ? 'mr-2 text-base font-semibold   my-2 text-[#f7f7f793] underline ' : 'mr-2 text-base font-semibold   my-2')} to='/skills'>Skills</NavLink>
-                        <NavLink className={({ isActive }) => (isActive ? 'mr-2 text-base font-semibold   my-2 text-[#f7f7f793] underline ' : 'mr-2 text-base font-semibold   my-2')} to='/about'>About Me</NavLink>
-                        <NavLink className={({ isActive }) => (isActive ? 'mr-2 text-base font-semibold   my-2 text-[#f7f7f793] underline ' : 'mr-2 text-base font-semibold   my-2')} to='/contact'>Contact Me</NavLink>
+                        <NavLink className={({ isActive }) => (isActive ? 'md:mx-2 text-base font-semibold   my-2 text-[#f7f7f793] underline ' : 'md:mx-2 text-base font-semibold   my-2')} to='/'>Home</NavLink>
+                        <NavLink className={({ isActive }) => (isActive ? 'md:mx-2 text-base font-semibold   my-2 text-[#f7f7f793] underline ' : 'md:mx-2 text-base font-semibold   my-2')} to='/projects'>Projects</NavLink>
+                        <NavLink className={({ isActive }) => (isActive ? 'md:mx-2 text-base font-semibold   my-2 text-[#f7f7f793] underline ' : 'md:mx-2 text-base font-semibold   my-2')} to='/skills'>Skills</NavLink>
+                        <NavLink className={({ isActive }) => (isActive ? 'md:mx-2 text-base font-semibold   my-2 text-[#f7f7f793] underline ' : 'md:mx-2 text-base font-semibold   my-2')} to='/about'>About Me</NavLink>
+                        <NavLink className={({ isActive }) => (isActive ? 'md:mx-2 text-base font-semibold   my-2 text-[#f7f7f793] underline ' : 'md:mx-2 text-base font-semibold   my-2')} to='/contact'>Contact Me</NavLink>
 
                         <button className='bg-[#f7f7f7] text-[#1e1e1e] hover:text-black  hover:bg-[#f7f7f762] font-bold my-2 rounded-lg p-2' onClick={() => openInNewTab("https://drive.google.com/file/d/1PtJ6KrvqK9xbBWcq8H9yMiMNt_zBOW3S/view?usp=sharing")}>Resume</button>
 
