@@ -9,6 +9,13 @@
   border-radius: 50%;
   z-index: 999;
 }
+.snake {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: green;
+}
 
 
 .lightLine{

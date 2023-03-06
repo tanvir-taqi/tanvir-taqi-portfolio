@@ -4,11 +4,22 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import ReactGA from 'react-ga';
+import UserContext from './UserContext/UserContext';
+import { QueryClient, QueryClientProvider } from 'react-query';
+ReactGA.initialize('UA-259248665-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
+
+// Create a client
+const queryClient = new QueryClient()
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    
-    <App />
+    <QueryClientProvider client={queryClient}>
+      <UserContext>
+        <App />
+      </UserContext>
+    </QueryClientProvider>
   </React.StrictMode>
 );
 

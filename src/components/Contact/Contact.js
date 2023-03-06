@@ -3,6 +3,7 @@ import emailjs from '@emailjs/browser';
 import ArrowNav from '../ArrowNav/ArrowNav';
 import { motion } from "framer-motion"
 import Loader from '../Loader/Loader';
+import './Contact.module.css'
 
 
 const Contact = () => {
@@ -55,36 +56,35 @@ const Contact = () => {
                         <h1 className='text-5xl font-bold text-center  my-10'>Contact Me</h1>
                         <p className='text-lg'>{emailMsg}</p>
                         <p className='text-lg'>{errorMsg}</p>
-                        <form className=" my-10 p-10 border border-[#f7f7f71c]" ref={form} onSubmit={sendEmail}>
+                        <form className=" my-10 p-10 border border-[#1e1e1e1c] bg-[#9e9b9b] text-black" ref={form} onSubmit={sendEmail}>
                             <div className="form-control">
                                 <label className="label">
                                     Name:
                                 </label>
-                                <input required type="text" name='user_name' placeholder="email" className="input input-bordered bg-[#f7f7f7d0] border border-[#f7f7f7] text-[#1e1e1e] tracking-wider text-semibold p-1" />
+                                <input required type="text" name='user_name' placeholder="Email" className="input input-bordered px-4 bg-[#1e1e1e1c] border border-[#f7f7f7] text-[#000] tracking-wider text-semibold p-1" />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     Email:
                                 </label>
-                                <input required type="email" name='user_email' placeholder="Name" className="input input-bordered bg-[#f7f7f7d0] border border-[#f7f7f7] text-[#1e1e1e] tracking-wider text-semibold p-1" />
+                                <input required type="email" name='user_email' placeholder="Name" className="input input-bordered px-4 bg-[#1e1e1e1c] border border-[#f7f7f7] text-[#000] tracking-wider text-semibold p-1" />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     Subject:
                                 </label>
-                                <input required type="text" name='subject' placeholder="Subject" className="input input-bordered bg-[#f7f7f7d0] border border-[#f7f7f7] text-[#1e1e1e] tracking-wider text-semibold p-1" />
+                                <input required type="text" name='subject' placeholder="Subject" className="input input-bordered px-4 bg-[#1e1e1e1c] border border-[#f7f7f7] text-[#000] tracking-wider text-semibold p-1" />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     Your message
                                 </label>
-                                <textarea name="message" className="textarea textarea-bordered h-24 w-full my-3 text-base  bg-[#f7f7f7d0] border border-[#f7f7f7] text-[#1e1e1e] tracking-wider text-semibold p-1" placeholder="Your Message" required></textarea>
+                                <textarea name="message" className="textarea textarea-bordered h-24 w-full my-3 text-base px-4  bg-[#1e1e1e1c] border border-[#f7f7f7] text-[#000] tracking-wider text-semibold p-1" placeholder="Your Message" required></textarea>
                             </div>
 
-                            {/* <p className='text-lg'>{emailMsg}</p>
-                            <p className='text-lg'>{errorMsg}</p> */}
-                            <div className="form-control mt-6">
-                                <input className="btn bg-[#f7f7f7] text-[#1e1e1e] hover:text-black  hover:bg-[#f7f7f762] font-bold my-2 rounded-lg p-2" type="submit" value="Send Message" />
+                          
+                            <div className="form-control w-full flex justify-end items-end  mt-6">
+                                <input className="btn md:w-1/4 bg-[#f7f7f7] text-[#1e1e1e] hover:text-white  hover:bg-[#1e1e1e] duration-700 font-bold my-2 rounded-lg p-2" type="submit" value="Send Message" />
                             </div>
                         </form>
                     </div>

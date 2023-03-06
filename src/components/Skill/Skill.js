@@ -26,14 +26,14 @@ const Skill = () => {
            <div className='grid grid-cols-1 md:grid-cols-3 gap-20 my-10 '>
             <div> 
                 <h1 className='text-2xl font-extrabold'>Technical Skills</h1>
-                <ul>
+                <ul className='text-black'>
                     {
                         techSkill.map((ts , i) => <li key={i}><Typewriter
                             words={[ts]}
                             loop={1}
                             cursor
                             cursorStyle=''
-                            typeSpeed={150}
+                            typeSpeed={50}
                             deleteSpeed={50}
                             delaySpeed={1000}
                         ></Typewriter></li>)
@@ -42,14 +42,14 @@ const Skill = () => {
             </div>
             <div> 
             <h1 className='text-2xl font-extrabold'>Tools I can Use</h1>
-                <ul>
+                <ul className='text-black'>
                     {
                         toolsSkill.map((ts , i) => <li key={i}><Typewriter
                             words={[ts]}
                             loop={1}
                             cursor
                             cursorStyle=''
-                            typeSpeed={150}
+                            typeSpeed={50}
                             deleteSpeed={50}
                             delaySpeed={1000}
                         ></Typewriter></li>)
@@ -58,14 +58,14 @@ const Skill = () => {
             </div>
             <div> 
             <h1 className='text-2xl font-extrabold'>Soft Skills</h1>
-                <ul>
+                <ul className='text-black'>
                     {
                         softSkill.map((ts , i) => <li key={i}><Typewriter
                             words={[ts]}
                             loop={1}
                             cursor
                             cursorStyle=''
-                            typeSpeed={100}
+                            typeSpeed={30}
                             deleteSpeed={50}
                             delaySpeed={1000}
                         ></Typewriter></li>)

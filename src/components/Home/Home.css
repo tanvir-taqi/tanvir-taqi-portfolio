@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Monoton&family=Poppins&family=Press+Start+2P&display=swap');
 
 
 
@@ -8,12 +8,12 @@
     display: flex;
     justify-content: end;
     align-items: center;
-    /* border: 2px solid #f7f7f71c; */
+    
     width: 80%;
     transition: all 3s ease-in;
-    animation: welcome 2s ease-in 1s ;
-    font-family: 'Rubik Vinyl', cursive;
-    font-size: 24px;
+    animation: welcomee 2s ease-in 1s ;
+    font-family: 'Dancing Script', cursive;
+        
     height: fit-content;
     z-index: -999;
     
@@ -22,12 +22,13 @@
 .welcome-msg{
     border: none;
     background: transparent;
-    width: 300px;
-    font-weight: 900;
+    
+    font-weight: 300;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: end;
     justify-content: center;
+    
 }
 
 @keyframes welcome {

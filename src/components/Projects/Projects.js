@@ -50,6 +50,7 @@ const Projects = () => {
                 openInProject={openInProject}
                 ></SingleProject>)
             }
+
         </div>
             
         </div>

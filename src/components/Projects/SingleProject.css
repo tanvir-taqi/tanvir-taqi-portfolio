@@ -23,8 +23,6 @@
     
     display: none;
 }
-
-
 .project-card:hover .scanner {
     display: block;
     animation: scanDetails;

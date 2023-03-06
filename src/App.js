@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react';
-import {BrowserRouter as Router} from 'react-router-dom';
+import {BrowserRouter as Router, RouterProvider} from 'react-router-dom';
 import './App.css';
 
 import Header from './components/Header/Header';
 import { motion } from "framer-motion"
 import Social from './components/Social/Social';
 import AnimatedRoute from './routers/AnimatedRoute';
+import { router } from './routers/router';
 
 
 function App() {
@@ -37,10 +38,22 @@ function App() {
     return ()=> window.removeEventListener("mousemove",mouseMove)
   },[])
 
+
+    // useEffect(()=>{
+    //   document.addEventListener('mousemove', function(e) {
+    //     const snake = document.querySelector('.snake');
+    //     const x = e.clientX;
+    //     const y = e.clientY;
+    //     snake.style.left = x + 'px';
+    //     snake.style.top = y + 'px';
+    // })
+    // })
   return (
     <div className=''>
+      <RouterProvider router={router}>
      <div className="lightLine"></div>
      <div className="lightLine2"></div>
+     {/* <div class="snake"></div> */}
 
       <Router>
       <motion.div 
@@ -53,12 +66,12 @@ function App() {
       <AnimatedRoute></AnimatedRoute>
       </Router>
         
-      {/* <RouterProvider router={router}>
+      
         
-      </RouterProvider> */}
+      </RouterProvider>
 
     </div>
  );
 }
 
-export default App;
+export default App
