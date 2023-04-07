@@ -4,7 +4,7 @@ import ArrowNav from '../ArrowNav/ArrowNav';
 import { motion } from "framer-motion"
 
 const Skill = () => {
-    const techSkill = ['HTML', 'CSS', 'Bootstrap', 'Tailwind CSS','DaisyUi','Javascript','React.js','Firebase','Node.js','Express Js','MongoDB']
+    const techSkill = ['HTML', 'CSS', 'Bootstrap', 'Tailwind CSS','DaisyUi','Javascript','React.js','Firebase','Node.js','Express Js','MongoDB','Next JS']
     const toolsSkill = ['VS Code', 'Figma', 'Adobe XD',' Git & GitHub', 'Netlify', 'Vercel', 'Firebase']
     const softSkill = ['Empathy', 'Leadership', 'Good communication skill',' Open minded', 'Strong sense of responsibility']
     useEffect(()=>{

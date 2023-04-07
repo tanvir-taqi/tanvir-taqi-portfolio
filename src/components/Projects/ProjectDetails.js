@@ -22,7 +22,7 @@ const ProjectDetails = () => {
                 <div className='flex flex-col justify-center items-start p-4'>
                     <h1 className='pb-4 text-3xl font-bold'>{name}</h1>
                     <h1 className='py-2 text-xl font-semibold'>{subtitle}</h1>
-                    <h1 className='py-2 text-lg font-bold'>{type}</h1>
+                    <h1 className='py-2 text-lg font-bold'>{type ? type : ''}</h1>
                     <h1 className='py-4 text-lg font-normal'><span className='font-bold'>Technologies: </span> <span className='text-black'>{technologies}</span></h1>
                     <h1 className='py-4 text-base text-black font-normal'><Typewriter
                         words={[details]}

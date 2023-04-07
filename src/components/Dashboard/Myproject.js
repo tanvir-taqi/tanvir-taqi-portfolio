@@ -23,7 +23,7 @@ const Myproject = () => {
             return
         } else {
             setMyprojectLoader(true)
-            fetch(`http://localhost:5000/myproject/${id}`, {
+            fetch(`https://tanvir-taqi-server.vercel.app/myproject/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
@@ -52,7 +52,7 @@ const Myproject = () => {
             return
         }
         setMyprojectLoader(true)
-        fetch(`http://localhost:5000/myproject/${id}`, {
+        fetch(`https://tanvir-taqi-server.vercel.app/myproject/${id}`, {
             method: 'PUT',
             headers:{
                 'content-type': 'application/json'

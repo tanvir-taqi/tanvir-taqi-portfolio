@@ -17,8 +17,8 @@ function App() {
 
   const variants = {
     default:{
-      x:mousePosition.x  + 12 ,
-      y:mousePosition.y + 12 
+      x:mousePosition.x  + 16 ,
+      y:mousePosition.y + 16 
       
     }
   }
@@ -39,21 +39,13 @@ function App() {
   },[])
 
 
-    // useEffect(()=>{
-    //   document.addEventListener('mousemove', function(e) {
-    //     const snake = document.querySelector('.snake');
-    //     const x = e.clientX;
-    //     const y = e.clientY;
-    //     snake.style.left = x + 'px';
-    //     snake.style.top = y + 'px';
-    // })
-    // })
+
   return (
     <div className=''>
       <RouterProvider router={router}>
      <div className="lightLine"></div>
      <div className="lightLine2"></div>
-     {/* <div class="snake"></div> */}
+     
 
       <Router>
       <motion.div 

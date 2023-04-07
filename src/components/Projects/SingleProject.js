@@ -10,7 +10,7 @@ const SingleProject = ({ project ,openInProject}) => {
         name } = project
         
     return (
-        <Link  to={`/project/${_id}`} className='border project-card cursor-pointer  border-[#f7f7f71c] px-2'>
+        <Link  to={`/project/${_id}`} className='border p-1 project-card cursor-pointer  border-[#2020204f] '>
             <div className='relative p-4 md:p-1  overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl'>
                 <img
                     className='my-10  h-56 md:h-64 xl:h-80 project-img'

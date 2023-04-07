@@ -3,19 +3,13 @@
 .cursor{
   width:28px;
   height: 28px;
-  background: rgba(0, 0, 0, 0.596);
+  background: rgba(0, 0, 0, 0.646);
   border: 4px solid rgb(255, 255, 255);
   position: fixed;
   border-radius: 50%;
   z-index: 999;
 }
-.snake {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  border-radius: 50%;
-  background-color: green;
-}
+
 
 
 .lightLine{

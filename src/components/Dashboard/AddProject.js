@@ -84,45 +84,45 @@ const AddProject = () => {
             <form onSubmit={addProjectsToDb} className='bg-gray-700 text-black w-2/3 p-10' >
                 <div className="form-control">
                     <label htmlFor="name">Project Name</label>
-                    <input type="text" name='name' />
+                    <input className='py-1 px-4 text-lg font-medium' type="text" name='name' />
                 </div>
                 <div className="form-control">
                     <label htmlFor="subtitle">subtitle</label>
-                    <input type="text" name='subtitle' />
+                    <input className='py-1 px-4 text-lg font-medium' type="text" name='subtitle' />
                 </div>
                 <div className="form-control">
                     <label htmlFor="live">Live Link</label>
-                    <input type="text" name='live' />
+                    <input className='py-1 px-4 text-lg font-medium' type="text" name='live' />
                 </div>
                 <div className="form-control">
                     <label htmlFor="client">client</label>
-                    <input type="text" name='client' />
+                    <input className='py-1 px-4 text-lg font-medium' type="text" name='client' />
                 </div>
                 <div className="form-control">
                     <label htmlFor="source">source</label>
-                    <input type="text" name='source' />
+                    <input className='py-1 px-4 text-lg font-medium' type="text" name='source' />
                 </div>
               
                 
                 <div className="form-control">
                     <label htmlFor="type">type</label>
-                    <input type="text"  name='type'/>
+                    <input className='py-1 px-4 text-lg font-medium' type="text"  name='type'/>
                 </div>
                 <div className="form-control">
                     <label htmlFor="index">index</label>
-                    <input type="text"  name='index'/>
+                    <input className='py-1 px-4 text-lg font-medium' type="text"  name='index'/>
                 </div>
                 <div className="form-control">
                     <label htmlFor="img">img</label>
-                    <input type="file" name='img'/>
+                    <input className='py-1 px-4 text-lg font-medium' type="file" name='img'/>
                 </div>
                 <div className="form-control">
                     <label htmlFor="details">details</label>  
-                    <textarea name="details" id="" cols="30" rows="5"></textarea>
+                    <textarea className='py-1 px-4 text-lg font-medium'  name="details" id="" cols="30" rows="5"></textarea>
                 </div>
                 <div className="form-control">
                     <label htmlFor="technologies">technologies</label>    
-                    <textarea name="technologies" id="" cols="30" rows="3"></textarea>
+                    <textarea className='py-1 px-4 text-lg font-medium'  name="technologies" id="" cols="30" rows="3"></textarea>
                 </div>
                 <div className="form-control">
                    <input type="submit" value="Add Project" className='bg-blue-400 my-4 w-1/6 cursor-pointer' />

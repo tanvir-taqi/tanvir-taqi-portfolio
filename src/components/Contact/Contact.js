@@ -79,12 +79,12 @@ const Contact = () => {
                                 <label className="label">
                                     Your message
                                 </label>
-                                <textarea name="message" className="textarea textarea-bordered h-24 w-full my-3 text-base px-4  bg-[#1e1e1e1c] border border-[#f7f7f7] text-[#000] tracking-wider text-semibold p-1" placeholder="Your Message" required></textarea>
+                                <textarea name="message" className="textarea textarea-bordered h-24 my-3 text-base px-4  bg-[#1e1e1e1c] border border-[#f7f7f7] text-[#000] tracking-wider text-semibold p-1" placeholder="Your Message" required></textarea>
                             </div>
 
                           
                             <div className="form-control w-full flex justify-end items-end  mt-6">
-                                <input className="btn md:w-1/4 bg-[#f7f7f7] text-[#1e1e1e] hover:text-white  hover:bg-[#1e1e1e] duration-700 font-bold my-2 rounded-lg p-2" type="submit" value="Send Message" />
+                                <input className="btn md:w-1/4 bg-[#f7f7f7] text-[#1e1e1e] duration-700 hover:text-white  hover:bg-[#1e1e1e]  font-bold my-2 rounded-lg p-2" type="submit" value="Send Message" />
                             </div>
                         </form>
                     </div>
