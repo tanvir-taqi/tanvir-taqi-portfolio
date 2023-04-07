@@ -42,17 +42,19 @@ function App() {
 
   return (
     <div className=''>
-      <RouterProvider router={router}>
-     <div className="lightLine"></div>
-     <div className="lightLine2"></div>
-     
-
-      <Router>
-      <motion.div 
+       <motion.div 
       className={`cursor hidden md:block `}
       variants={variants}
       animate="default"
       ></motion.div>
+      <RouterProvider router={router}>
+     <div className="lightLine hidden md:block"></div>
+     <div className="lightLine2 hidden md:block"></div>
+     
+
+      <Router>
+     
+      
         <Header></Header>
         <Social></Social>
       <AnimatedRoute></AnimatedRoute>

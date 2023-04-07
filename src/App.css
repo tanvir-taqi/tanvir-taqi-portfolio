@@ -6,6 +6,7 @@
   background: rgba(0, 0, 0, 0.646);
   border: 4px solid rgb(255, 255, 255);
   position: fixed;
+  
   border-radius: 50%;
   z-index: 999;
 }
@@ -16,9 +17,9 @@
   height: 0.001px;
   min-width: 100%;
   /* transform: rotate(100deg); */
-  box-shadow: 1200px 800px 600px 200px #f7f7f73f;
+  box-shadow: 1200px 800px 600px 200px #eee;
   animation: bgLight;
-  animation-duration: 20s;
+  animation-duration: 1s;
   z-index: -999;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
@@ -40,9 +41,9 @@
   height: 0.001px;
   min-width: 100%;
   /* transform: rotate(100deg); */
-  box-shadow: 1200px 800px 600px 200px #f7f7f73f;
+  box-shadow: 1200px 800px 600px 200px #eee;
   animation: bgLight2;
-  animation-duration: 20s;
+  animation-duration: 1s;
   z-index: -999;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
